@@ -4,50 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Taste of Vietnam</title>
-  <link rel="stylesheet" href="css/style.cs">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <nav>
-      <img class="menu" src="images/icons/menu-icon.svg" alt="hamburger menu">
-      <img class="navlogo" src="images/logos/horizontal-logo-tov.svg" alt="Taste of Vietnam Logo">
-      <img class="search" src="images/icons/search-icon.svg" alt="search menu">
-      <a class="hamburger" href="about.html">ABOUT</a>
-
+    <header class="header">
       <div class="hamburgerMenu">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
       </div>
-
-      <a class="hamburger" href="none">ALL RECIPES</a>
-      <a class="hamburger" href="courses.html">COURSES</a>
-      <a class="hamburger" href="none">DIFFICULTY</a>
-      <a class="hamburger" href="none">PROTEIN</a>
-      <a class="hamburger" href="none">NOODLES</a>
-      <a class="hamburger" href="none">QUICK-BITES</a>
-  </nav>
+      <h1 class="navlogo">
+      <img src="images/logos/horizontal-logo-tov.svg" alt="Taste of Vietnam Logo">
+      </h1>
+      <img src="images/icons/search-icon.svg" alt="search menu">
+      <nav class="nav">
+        <ul>
+          <li> <a href="about.html">about</a></li>
+          <li> <a href="#">all recipes</a></li>
+          <li> <a href="courses.html">courses</a></li>
+          <li> <a href="#">difficulty</a></li>
+          <li> <a href="#">protein</a></li>
+          <li> <a href="#">noodles</a></li>
+          <li> <a href="#">quick-bites</a></li>
+        </ul>
+      </nav>
+    </header>
   <main>
 
-    <div class="maintop"> 
+    <section class="hero"> 
       <video autoplay lopp muted poster="images/hero-video.mp4">
         <source src="images/hero-video.mp4">
       </video>
-      <h1>SWEET, SALTY, SAVORY.
-        CAN YOU TASTE IT YET?</h1>
+      <h2>SWEET, SALTY, SAVORY.
+        CAN YOU TASTE IT YET?</h2>
       <p>Taste Of Vietnam delivers the highest quality recipes at your finger tips! Vietnamese cuisine is full of dynamic flavors and aromas, and we’re so happy to share it with you!</p>
-      <a class="orangebutton" href="about.html"> 
-        <button>
+        <button class="orangeButton">
         Discover New Horizons</button>
       </a>
-    </div>
+    </section>
+    
+    <img class="allstarSticker" src="images/stickers/mobile-allstar.png">
 
-    <div class="allstar">
-      <img class="allstarsticker" src="images/stickers/mobile-allstar.png">
+    <div class="recipeCard">
       <img src="images/trend-alert/banh-uot.jpg" alt="banh uot, steamed rice noodle sheets/rolls">
-      <p class="recipenameblack">Bánh Ướt</p>
-      <p class="orangename">STEAMED RICE NOODLE SHEETS/ROLLS</p>
+      <h4 class="recipeNames">Bánh Ướt</h4>
+      <p class="orangeName">Steamed rice noodle sheets/rolls</p>
       <p class="description">Soft, delicate, and full of flavor, bánh ướt, thin rice sheets, are steamed to perfection and then served with various toppings, such as cucumbers, Vietnamese ham, beansprouts, and a flavorful dipping sauce. </p>
-      <a class="orangebutton" href="recipe.html"><button>Start Cooking!</button></a>
+    <button class="orangeButton">Start Cooking!</button>
     </div>
 
     <div class="firstbreak">
@@ -56,72 +59,73 @@
         </svg>
         <img class="stickers" src="images/stickers/alarm.png">
     </div>
-
+<section>
+  <header>
     <img class="trendbuzz" src="images/doodles/trendbuzz-doodle.png">
     <img class="trendbuzz" src="images/doodles/trendbuzz-doodle.png">
-    <h1>TREND ALERT</h1>
+    <h2>trend alert</h2>
+  </header>
+    <div class="horizontalScroll">
 
-    <div clas="trendalert">
-
-      <div class="trendcards">
+      <ul class="cards">
+        <li>
         <img src="images/trend-alert/banh-uot.jpg" alt="banh uot, steamed rice noodle sheets/rolls">
-        <p class="recipenamewhite">Bánh Ướt</p>
-        <p class="orangename">STEAMED RICE NOODLE SHEETS/ROLLS</p>
-      </div>
+        <h4>Bánh Ướt</h4>
+        <p class="orangeName">STEAMED RICE NOODLE SHEETS/ROLLS</p>
+      </li>
 
-      <div class="trendcards">
+      <li>
         <img src="images/trend-alert/canh-chua-ca.jpg" alt="canh chua ca, sweet and sour fish soup">
-        <p class="recipenamewhite">Canh Chua Cá</p>
-        <p class="orangename">sweet and sour fish soup</p>
-      </div>
+        <h4>Canh Chua Cá</h4>
+        <p class="orangeName">sweet and sour fish soup</p>
+      </li>
 
-      <div class="trendcards">
+      <li>
         <img src="images/trend-alert/banh-xeo.jpg" alt="banh xeo, sizzling crispy and savory crepes">
-        <p class="recipenamewhite">Bánh Xèo</p>
-        <p class="orangename">Sizzling Crispy and Savory Crepes</p>
-      </div>
+        <h4>Bánh Xèo</h4>
+        <p class="orangeName">Sizzling Crispy and Savory Crepes</p>
+      </li>
 
-      <div class="trendcards">
+      <li>
         <img src="images/dinner/pho-bo.jpg" alt="pho bo, beef noodle soup">
-        <p class="recipenamewhite">Phở Bo</p>
-        <p class="orangename">beef noodle soup</p>
-      </div> 
-
+        <h4>Phở Bo</h4>
+        <p class="orangeName">beef noodle soup</p>
+      </li>
     </div>
-
-    <div class="secondbreak">
-      <img class="stickers" src="images/stickers/chopsticks.png"> 
-      <h1> THE CATEGORY IS?</h1>
+</section>
+<section>
+    <header>
+      <img class="stickers" src="images/stickers/chopstick.png"> 
+      <h2>the category is?</h2>
       <img class="underline" src="images/doodles/underline-doodle.svg">
-    </div>
+    </header>
 
-    <div class="thecategoryis">
-
-      <div class="categorycards"> 
+    <div class="horizontalScroll">
+      <div class="cards"> 
         <img src="images/categories/difficulty-cover.jpg" alt="category is difficulty">
-        <p class="sortby">DIFFICULTY</p>
-        <button class="invertbutton">Test Your Skills!</button>
+        <h4 class="sortby">difficulty</h4>
+        <button class="invertButton">Test Your Skills!</button>
       </div>
 
-      <div class="categorycards"> 
+      <div class="cards"> 
         <img src="images/categories/courses-cover.jpg" alt="category is courses">
-        <p class="sortby">COURSES</p>
-        <button class="invertbutton">What Time Is It?</button>
+        <h4 class="sortby">courses</h4>
+        <button class="invertButton">What Time Is It?</button>
       </div>
 
-      <div class="categorycards"> 
+      <div class="cards"> 
         <img src="images/categories/quick-bites-cover.jpg" alt="category is quick-bites">
-        <p class="sortby">QUICK-BITES</p>
-        <button class="invertbutton">In A Rush?</button>
+        <h4 class="sortby">quickbites</h4>
+        <button class="invertButton">In A Rush?</button>
       </div>
 
-      <div class="categorycards"> 
+      <div class="cards"> 
         <img src="images/categories/noodles-cover.jpg" alt="category is noodles">
-        <p class="sortby">NOODLES</p>
-        <button class="invertbutton">Want Noods?</button>
+        <h4 class="sortby">noodles</h4>
+        <button class="invertButton">Want Noods?</button>
       </div>
-
     </div>
+</section>
 
     <div class="thirdbreak">
       <svg xmlns="http://www.w3.org/2000/svg" width="417" height="61" viewBox="0 0 417 61" fill="none">
@@ -130,39 +134,40 @@
         <img class="stickers" src="images/stickers/bowl-of-rice.png">
     </div>
 
-    <h1>MAYBE THIS CAN HELP YOU FIND YOUR NEXT RECIPE!</h1>
+    <h2>maybe this can help you find your next recipe!</h2>
     <img class="arrow" src="images/doodles/arrow-doodle.png">
-    <a class="orangebutton" href="about.html"> 
-      <button>
+      <button class="orangeButton">
       View All recipes</button>
-    </a>
-
   </main>
     
   <footer>
-    <svg class="greenwave" xmlns="http://www.w3.org/2000/svg" width="390" height="39" viewBox="0 0 390 39" fill="none">
-    <path d="M0 18C0 18 59 -22.5 195 18C331 58.5 390 18 390 18V39H0V18Z" fill="#578100"/>
+    <svg class="footerWave" xmlns="http://www.w3.org/2000/svg" width="390" height="39" viewBox="0 0 390 39"
+      fill="none">
+      <path d="M0 18C0 18 59 -22.5 195 18C331 58.5 390 18 390 18V39H0V18Z" fill="#578100" />
     </svg>
-
-    <div class="greenwhole">
-      <div class="foot1">
-      <img class="footlogo" src="images/logos/vertical-logo-tov.svg" alt="Taste of Vietnam Logo">
+    
+      <div class="footerRow">
+        <img class="footlogo" src="images/logos/vertical-logo-tov.svg" alt="Taste of Vietnam Logo">
         <div>
           <li>
-            <ul><a class="footerlinks" href="index.html">HOME</a></ul>
-          <ul><a class="footerlinks" href="about.html">ABOUT</a></ul>
-            <ul><a class="footerlinks" href="none">ALL RECIPES</a></ul>
+            <ul><a href="index.html">home</a></ul>
+            <ul><a href="about.html">about</a></ul>
+            <ul><a href="#">all recipes</a></ul>
           </li>
         </div>
       </div>
-
+  
+      <section class="footer">
       <svg xmlns="http://www.w3.org/2000/svg" width="345" height="23" viewBox="0 0 345 23" fill="none">
-      <path d="M2 14.1934C117.5 -23.8067 188.5 41.6934 343 14.1934" stroke="white" stroke-width="4" stroke-linecap="round"/>
+        <path d="M2 14.1934C117.5 -23.8067 188.5 41.6934 343 14.1934" stroke="white" stroke-width="4"
+          stroke-linecap="round" />
       </svg>
-      CRAVING SOMETHING NEW? LET US KNOW! 
-      <a href="#">REQUEST</a>
-    </div>
-    © 2023 Llamastin
+      <p class="request">Craving something new? Let us know!
+      <a class="arrow" href="#">request</a></p>
+      <p class="copyright">© 2023 Llamastin</p>
+    </section>
   </footer>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
