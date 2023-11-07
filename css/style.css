@@ -9,10 +9,15 @@ html {
   box-sizing: inherit;
 }
 
-body {
+body, button {
   margin: 0;
   color: #000;
   font-family: 'Montserrat';
+  font-size: 1rem;
+}
+
+main {
+  margin: 0 1.25rem;
 }
 
 /* NAVIGATION */
@@ -77,20 +82,88 @@ body {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-
-
-/* MAIN */
-main {
+/* BUTTON */ 
+.orangeButton {
+  width: 10.6875rem;
+  height: 2.75rem; 
+  border-radius: 2rem;
+  background-color:#FF9900;
+  font-size: 0.9375rem;
+  font-weight: 800;
+  border-style: none;
+  margin: 1.75rem;
+  align-self: center;
+}
+/* OPENER */
+video {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+h2 {
+  font-family: 'tilt warp';
+  font-size: 50px;
+  margin: 0;
+  text-align: center;
+  line-height: 2.8rem ;
 }
 
+.opener span {
+  font-size: 32px;
+}
 
+.opener {
+  display: flex;
+  flex-direction: column;
 
+}
+.opener p {
+  font-weight: 700;
+  line-height: 1.5rem;
+}
 
+.opener img {
+  position: absolute;
+  
+}
 
+/* recipe cards */
+.recipeCard {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  border-radius: .63rem;
+}
 
+.recipeCard img {
+  object-fit: cover;
+  height: 13.75rem;
+}
 
+.description {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 0 1.44rem;
+}
 
+.description p {
+  margin:  .5rem 0 0 0;
+}
 
+ h3 {
+  margin: .8rem 0 0 0;
+  font-size: 1.5625rem;
+  text-transform: uppercase;
+  font-weight: 900;
+ }
+
+h4 { 
+  margin: 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  color:#944F00;
+}
 
 
 
