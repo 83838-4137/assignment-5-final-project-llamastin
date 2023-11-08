@@ -1,3 +1,8 @@
-<svg width="17" height="25" viewBox="0 0 17 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path id="restaurant" d="M0.469417 23.2072L6.00999 13.9554L2.54057 11.8777L7.38858 3.78237C8.34664 2.18258 9.72708 1.15653 11.5299 0.70423C13.3327 0.251927 15.034 0.504804 16.6338 1.46286L2.78236 24.5923L0.469417 23.2072Z" fill="#1C1B1F"/>
+<svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_1026_1267" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="34" height="35">
+<rect width="33.8829" height="34.1191" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_1026_1267)">
+<path d="M8.46942 28.2072L14.01 18.9554L10.5406 16.8777L15.3886 8.78237C16.3466 7.18258 17.7271 6.15653 19.5299 5.70423C21.3327 5.25193 23.034 5.5048 24.6338 6.46286L10.7824 29.5923L8.46942 28.2072Z" fill="#1C1B1F"/>
+</g>
 </svg>
