@@ -16,7 +16,7 @@ body, button {
   font-size: 1rem;
 }
 
-main {
+.main {
   margin: 0 1.25rem;
 }
 
@@ -138,9 +138,20 @@ h2 {
   border-radius: .63rem;
 }
 
+.overlapSticker {
+  position: relative;
+  margin-top: 4.31rem;
+}
+
+.allstarSticker {
+  position: absolute;
+  top: -3rem;
+  right: -1rem;
+}
 .recipeCard img {
   object-fit: cover;
   height: 13.75rem;
+  border-radius: .63rem .63rem 0 0;
 }
 
 .description {
@@ -151,28 +162,54 @@ h2 {
 }
 
 .description p {
-  margin:  .5rem 0 0 0;
 }
 
  h3 {
-  margin: .8rem 0 0 0;
   font-size: 1.5625rem;
   text-transform: uppercase;
   font-weight: 900;
  }
 
 h4 { 
-  margin: 0;
   font-weight: 600;
   text-transform: uppercase;
   color:#BD5800;
 }
 
+.spacing {
 
-/* Cards */
-li img {
-  object-fit: cover;
 }
+
+
+
+/* FUll-Cards */
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem
+}
+.cards li  {
+  position: relative;
+
+  text-align: center;
+  width: 15.5625rem;
+  height: 29.3125rem; 
+  background-color: rgba(42,42,42, 0.4);
+
+}
+
+.overlapText {
+  position: absolute;
+  bottom: 0;
+}
+
+.cards img {
+  object-fit: cover;
+  size: 500%;
+}
+
 
 /* Category */
 .category button {
@@ -241,7 +278,7 @@ li img {
 /* RECIPE PAGE */
   .recipePage h4 {
     color: #fff ;
-    width: 21.8125rem;
+    /* width: 21.8125rem; */
     text-align: center;
     margin: .5rem 0 1.38rem 0;
   }
@@ -252,6 +289,9 @@ li img {
 /* FOOTER */
 .footerWave {
   display: inline-block;
+  height: auto;
+  width: 100%;
+
 }
 
 footer {
@@ -285,6 +325,7 @@ footer ul {
 footer ul a {
   text-decoration: none;
   color: #fff;
+  line-height: 2rem;
 }
 
 .closer {
