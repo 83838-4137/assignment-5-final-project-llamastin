@@ -362,8 +362,20 @@ h2 {
 
 .end img {
   position: absolute;
+  right: 2rem;
+  bottom: 1rem;
 }
 
+.end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.end button {
+  margin-top: 1.3rem;
+}
 
 
 /* LUNCH PAGE*/
@@ -472,6 +484,7 @@ footer ul a {
 .request {
   width: 15.5rem;
   margin-top: 1.8rem;
+  font-weight: 700;
 }
 
 footer a {
