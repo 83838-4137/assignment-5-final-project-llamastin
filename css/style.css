@@ -171,6 +171,11 @@ h2 {
   flex-direction: column;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   border-radius: .63rem;
+  margin-bottom: 3.14rem;
+} 
+
+.recipeCard button {
+  margin: 2rem
 }
 
 .overlapSticker {
@@ -193,7 +198,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-content: center;
-  margin: 1.44rem;
+  margin: 1.44rem 1.44rem 0 1.44rem;
   gap: .75rem;
 }
 
@@ -203,7 +208,7 @@ h2 {
 }
 
 .description button {
-  margin: .75rem;
+  margin: .75rem 0 2rem 0;
 }
 
  h3 {
@@ -366,19 +371,6 @@ h2 {
   margin-top: 1.3rem;
 }
 
-
-/* LUNCH PAGE*/
-.icons img {
-  width: 2.11769rem;
-  height: 2.13244rem;
-}
-
-.icons {
-  display: grid;
-  grid-template-columns: .3fr 1fr .3fr 1fr;
-
-}
-
 /* COURSES PAGE */
 .pageName, .recipePage {
   display: flex;
@@ -393,8 +385,8 @@ h2 {
 }
 
 .pageName svg {
-  position: absolute;
-  bottom: -2.4rem;
+  width: 100%;
+  height: auto;
 }
 
 .titles h2 {
@@ -418,6 +410,25 @@ h2 {
   font-weight: 700;
 }
 
+/* LUNCH PAGE*/
+.icons img {
+  width: 2.11769rem;
+  height: 2.13244rem;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: .3fr 1fr .3fr 1fr;
+  align-items: center;
+  vertical-align: middle;
+  gap: 1rem .6rem;
+}
+
+.lunchGrid {
+  margin-top: 3rem;
+  margin-bottom: 3.14rem;
+}
+
 /* RECIPE PAGE */
   .recipePage h4 {
     color: #fff ;
@@ -428,8 +439,7 @@ h2 {
 
 
 /* FOOTER */
-.footerWave {
-  display: inline-block;
+.wave {
   height: auto;
   width: 100%;
 }
