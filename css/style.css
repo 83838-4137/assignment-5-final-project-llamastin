@@ -16,7 +16,7 @@ body, button {
   font-size: 1rem;
 }
 
-.mainMargins, .coursesColumn {
+.balance, .margins, .pho, .household, .crown{
   margin: 0 1.25rem;
 }
 
@@ -588,9 +588,172 @@ form button {
   
 
 .commentBox {
-
   min-height: 6.0625rem;
 }
+
+/* ABOUT PAGE */
+.balance {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 4rem;
+}
+
+.balance em {
+  font-weight: bold;
+}
+
+.balance h3 {
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 138.5%; 
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+aside {
+  position: absolute;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: left;
+  text-transform: none;
+  width: 50%;
+  bottom: 13rem;
+
+
+}
+
+.vietnamMap {
+  position:relative;
+  margin: 2rem 0;
+}
+
+.imageMask {
+  object-fit: cover;
+  position: relative;
+  left: 0rem;
+  z-index: -1;
+  block-size: auto;
+  max-inline-size: 100%;
+  margin: 4rem 0;
+} 
+
+.infoCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rightTab, .leftTab {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 22.3125rem;
+  height: 10.625rem;
+  margin: .75em 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.0) 0%,
+    rgba(0, 0, 0, 0) 20%,
+    rgb(0, 0, 0) 100%
+  );
+  border-radius: .63rem;
+}
+
+.rightTab img, .leftTab img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: .63rem;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
+
+.rightTab div, .leftTab div {
+  position: absolute;
+  text-align: center;
+  left: 20%;
+  bottom: .4rem;
+  color: #fff;
+}
+
+.rightTab p, .leftTab p {
+  color:#FF9900;
+  font-size: 0.9375rem;
+  font-weight: 700;
+}
+
+.rightTab {
+  margin-top: 3rem;
+}
+
+.margins em {
+  font-weight: bold;
+}
+
+.pho  {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  gap: 1rem;
+
+}
+
+.pho em {
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+
+.pho br {
+  margin: 2rem 0;
+}
+
+/* ICONIC INGREDIENTS */
+.crown {
+  position: relative;
+}
+
+.crown img {
+  position:absolute;
+  top: -3rem;
+  left: 2rem
+}
+
+/* HOUSEHOLD ESSENTIALS */
+.household {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem;
+}
+
+
+.household button {
+  min-width: 21.875rem;
+}
+.household h2 {
+  margin: 3rem;
+}
+.ingredientsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 3rem 0;
+  gap: 1rem;
+}
+
+.ingredientsItem {
+  display: grid;
+  justify-items: center;
+  gap: .5rem;
+  align-items: center;
+  min-width:10.6875rem ;
+  min-height: 10.625rem;;
+  padding: 1rem;
+  border-radius: 0.625rem;
+  border: 2px solid #D9D9D9;
+}
+
+
 
 /* FOOTER */
 .wave {
