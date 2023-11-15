@@ -37,6 +37,7 @@ p {
 
 /* NAVIGATION */
 .header {
+  position: sticky;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -44,6 +45,8 @@ p {
   background-color: #578100;
   height:auto;
   width: 100%; 
+  z-index: 10;
+
   
 }
 
@@ -56,12 +59,11 @@ p {
   width: 100%;
   left: -100%;
   transform: translateX(-50%);
-  z-index: 2;
 }
 
 .nav ul {
   list-style: none;
-  margin-left:1.25rem;
+  margin-left:3rem;
 }
 
  .nav a {
@@ -617,7 +619,7 @@ aside {
   font-weight: 700;
   text-align: left;
   text-transform: none;
-  width: 50%;
+  width: 10rem;
   bottom: 13rem;
 
 
