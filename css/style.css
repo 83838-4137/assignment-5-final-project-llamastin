@@ -20,9 +20,10 @@ body, button {
   margin: 0 1.25rem;
 }
 
-ul {
+ ul {
   padding-left: 0;
 }
+
 
 h3, h4 {
   margin: 0;
@@ -121,26 +122,32 @@ p {
 /* OPENER */
 /* VIDEO *   */
 
-  
-.clipPath {
-  width: 100%;
-  height: 23.8125rem;
-
-}
-
-.clipPath img {
-  position:  absolute;
-  top: 23rem;
+.flame {
+  position: absolute;
+  bottom: -1rem;
   left: 3.5rem;
   z-index: 1;
 }
 
+.clipPath {
+  position: relative;
+  display: flex;
+  align-items: end;
+}
+
 video {
   object-fit: cover;
-  height: 100%;
+  height: 25rem;
   width: 100%;
-  clip-path: path("M390 366.831C390 366.831 331 398.712 195 366.831C59 334.949 -4.51228e-05 366.831 -4.51228e-05 366.831L-9.68664e-06 -5.76308e-07L390 3.02792e-05L390 366.831Z");
 }
+.clipPath svg {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: auto;
+
+}
+
 h2 {
   font-family: 'tilt warp';
   font-size: 50px;
@@ -262,27 +269,74 @@ h2 {
   left: 2.5rem;
   top: -1.5rem;
   rotate: -65deg;
+  margin-right: 4rem;
 }
 
 .buzzTwo {
   position: relative;
   right: 2.5rem;
   top: -1rem;
-  rotate: 35deg
+  rotate: 35deg;
+  margin-left: 4rem;
 }
 
-/* Bleed-Cards */
-.horizontalScroll {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* Carousel */
+.carousel {
+  max-width: 24.375rem;
+  position: relative;
+  margin: 0 auto;
+  padding-left: 3rem;
 }
+
+.dots {
+  display: flex;
+  justify-content: center;
+}
+
+.dots li {
+  display: inline-block;
+  background-color:#000;
+  border-radius: 30px;
+  margin: 0 10px;
+  width: 7px;
+  height: 7px;
+  opacity: .2;
+}
+
+.dots li.active {
+  opacity: 1;
+}
+
+.arrows {
+  border-radius: 30px;
+  position: absolute;
+  height: 44px;
+  width: 44px;
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 0 5px;
+  font-size: 1.5rem;
+  top: 50%;
+
+}
+
+.previous {
+  left: 2rem;
+}
+
+.next {
+  right: 2rem;
+}
+
+
+/* Bleed-Cards */
 
 .cards {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  gap: 2rem
+  gap: 2rem;
+  overflow: scroll;
 
 }
 .cards li {
@@ -771,17 +825,16 @@ aside {
 
 
 /* FOOTER */
-.wave {
-  height: auto;
-  width: 100%;
-}
+
 
 footer {
-  color: #fff;
-  font-weight: 700;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
+}
+.wave {
+  height: auto;
+  width: 100%;
 }
 
 .footlogo {
@@ -789,50 +842,50 @@ footer {
   height: 4.75rem;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: 400;
+  background-color: #578100;
+  padding: 1.5rem 4rem 4.3rem 4rem;
+} 
+
 .footerRow {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-  background-color: #578100;
-  padding-top: 1rem;
+  justify-content: space-between;
+}
+.footerColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 footer ul {
   list-style: none;
   text-align: right;
-  font-weight: 600;
-}
-
-footer ul a {
-  text-decoration: none;
-  color: #fff;
   line-height: 2rem;
 }
 
-.closer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #578100;
-  padding: 1.5rem 0 4.3rem 0;
-}
 .request {
   width: 15.5rem;
   margin-top: 1.8rem;
-  font-weight: 700;
 }
 
 footer a {
   text-decoration: none;
-  color: #FFA929;
+  color: #ffffff;
+  font-weight: 700;
 }
-.arrow::after, .titles a::after{
-  content: "→"
+
+.request::after, .titles a::after{
+  content: "→";
 }
-.copyright {
-  text-align: center;
-  font-size: 0.875rem;
-  font-weight: 500;
+
+.request {
+  color:#FF9900
 }

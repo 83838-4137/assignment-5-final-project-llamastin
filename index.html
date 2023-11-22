@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Taste of Vietnam</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header class="header">
@@ -34,10 +35,13 @@
 
   <main>
     <div class="clipPath">
-      <img src="images/doodles/steam-doodle.svg" alt="3 green steam lines">
     <video autoplay loop muted poster="images/hero-video.mp4" alt="asian chef sauting pan of vegtables">
       <source src="images/hero-video.mp4" type="video/mp4">
     </video>
+    <svg xmlns="http://www.w3.org/2000/svg" width="390" height="39" viewBox="0 0 390 39" fill="none">
+      <path d="M0 18C0 18 59 -22.5 195 18C331 58.5 390 18 390 18V39L0 39L0 18Z" fill="white"/>
+    </svg>
+    <img class= "flame" src="images/doodles/fire-doodle.svg" alt="flame">
   </div>
 
     <div class="margins">
@@ -74,7 +78,9 @@
         <img class="buzzTwo" src="images/doodles/trendbuzz-doodle.png" alt="green electric doodle lines">
       </header>
 
-      <div class="horizontalScroll">
+      <div class="carousel">
+<button type="button" class="arrows previous"><i class="fa-solid fa-angle-left"></i></button>
+<button type="button" class="arrows next"><i class="fa-solid fa-angle-right"></i></button>
         <ul class="cards">
         <li>
           <div class="darkOverlay">
@@ -117,6 +123,12 @@
         </li>
         </ul>
       </div>
+      <ul class="dots">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </section>
 
     <section>
@@ -125,7 +137,9 @@
         <h2>the <br> category is?</h2>
         <img class="underline" src="images/doodles/underline-doodle.svg">
       </header>
-      <div class="horizontalScroll">
+      <div class="carousel">
+<button type="button" class="arrows previous"><i class="fa-solid fa-angle-left"></i></button>
+<button type="button" class="arrows next"><i class="fa-solid fa-angle-right"></i></button>
         <ul class="cards">
           <li>
           <div class="darkOverlay">
@@ -190,29 +204,30 @@
       fill="none">
       <path d="M0 18C0 18 59 -22.5 195 18C331 58.5 390 18 390 18V39H0V18Z" fill="#578100" />
     </svg>
-    
+    <div class="footer">
       <div class="footerRow">
         <img class="footlogo" src="images/logos/vertical-logo-tov.svg" alt="Taste of Vietnam Logo">
-        <div>
-          <ul>
+          <div>
+            <ul>
             <li><a href="index.html">home</a></li>
             <li><a href="about.html">about</a></li>
             <li><a href="#">all recipes</a></li>
-          </ul>
+            </ul>
+          </div>
         </div>
-      </div>
-  
-      <div class="closer">
+      <div class="footerColumn">
       <svg xmlns="http://www.w3.org/2000/svg" width="345" height="23" viewBox="0 0 345 23" fill="none">
-        <path d="M2 14.1934C117.5 -23.8067 188.5 41.6934 343 14.1934" stroke="white" stroke-width="4"
-          stroke-linecap="round" />
+      <path d="M2 14.1934C117.5 -23.8067 188.5 41.6934 343 14.1934" stroke="white" stroke-width="4"
+      stroke-linecap="round" />
       </svg>
-      <p class="request">Craving something new? Let us know!
-      <a class="arrow" href="#">request</a></p>
-      <p class="copyright">© 2023 Llamastin</p>
+   <span>Craving something new? Let us know!
+      <a class="request" href="#">request</a> </span>
+      © 2023 Llamastin
       </div>
+    </div>
   </footer>
   <script src="js/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </body>
 
 </html>
