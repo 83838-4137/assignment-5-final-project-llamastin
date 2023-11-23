@@ -24,7 +24,6 @@ body, button {
   padding-left: 0;
 }
 
-
 h3, h4 {
   margin: 0;
 }
@@ -57,9 +56,9 @@ p {
   background-color: #578100;
   height: 100vh;
   transition: all 0.4s ease-in;
-  width: 80%;
+  width: 100%;
   left: -50%;
-  transform: translateX(-65%);
+  transform: translateX(-50%);
 }
 
 .nav ul {
@@ -173,7 +172,6 @@ h2 {
   margin-bottom: 1.4rem;
 }
 
-
 /* recipe cards */
 .recipeCard {
   display: flex;
@@ -262,6 +260,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden  ;
 }
 
 .buzzOne {
@@ -424,7 +423,7 @@ h2 {
 .end img {
   position: absolute;
   bottom: 10%;
-  right: 20%;
+  right: 15%;
 }
 
 .end {
@@ -598,7 +597,19 @@ ol {
 
 /* CARD VIEW */
 
-.steps {
+.cardView ol {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  overflow: scroll;
+  max-width: 24.375rem;
+  padding-right: 2rem;
+}
+
+.step {
+  list-style: none;
+}
+.stepCards {
   display: flex;
   flex-direction: column;
   width: 21.875rem;
@@ -609,14 +620,31 @@ ol {
 
 }
 
-.steps img {
+.stepCards img {
   object-fit: cover;
   height: 13rem;
+  border-radius: .63rem .63rem 0 0;
 }
 
-.steps p {
+.stepCards p {
   padding: 1rem;
+}
 
+.numberSystem {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.numberSystem button {
+  border: none;
+  background-color: transparent;
+}
+.numberSystem ol {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-weight: 600; 
+  list-style: none;
 }
 
 /* FORMS */
@@ -680,31 +708,27 @@ form button {
   margin-bottom: 3rem;
 }
 
-aside {
-  position: absolute;
-  font-size: 1.25rem;
+.emphasis {
   font-weight: 700;
-  text-align: left;
-  text-transform: none;
-  width: 10rem;
-  bottom: 13rem;
-
-
+  font-size: 1.25rem;
 }
 
 .vietnamMap {
   position:relative;
   margin: 2rem 0;
+  display: flex;
+  justify-content: center;
 }
 
 .imageMask {
   object-fit: cover;
   position: relative;
-  left: 0rem;
   z-index: -1;
   block-size: auto;
   max-inline-size: 100%;
-  margin: 4rem 0;
+  width: 100%;
+  max-height: 34.4375rem;
+  margin: 3rem 0 2rem 0;
 } 
 
 .infoCards {
@@ -740,9 +764,9 @@ aside {
 .rightTab div, .leftTab div {
   position: absolute;
   text-align: center;
-  left: 20%;
   bottom: .4rem;
   color: #fff;
+  width: 100%;
 }
 
 .rightTab p, .leftTab p {
@@ -759,12 +783,21 @@ aside {
   font-weight: bold;
 }
 
-.pho  {
+.pho{
   display: flex;
   align-self: center;
   flex-direction: column;
   gap: 1rem;
+}
 
+.pho header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pho img {
+  max-width: 10rem;
 }
 
 .pho em {
@@ -779,6 +812,10 @@ aside {
 /* ICONIC INGREDIENTS */
 .crown {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 .crown img {
@@ -849,7 +886,8 @@ footer {
   color: #ffffff;
   font-weight: 400;
   background-color: #578100;
-  padding: 1.5rem 4rem 4.3rem 4rem;
+  padding: 1.5rem 3rem 4.3rem 3rem;
+  text-align: center;
 } 
 
 .footerRow {

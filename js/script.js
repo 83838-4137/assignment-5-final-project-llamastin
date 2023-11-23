@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', function (e) {
     nextButton.addEventListener('click', nextSlide);
 
     pageDots.forEach(function (dot) { 
-      dot.addEventListener('click',function (e) { 
+      dot.addEventListener('click', function (e) { 
     goToSlide(Array.prototype.slice.call(pageDots).indexOf(e.target));
     })
   });
@@ -31,11 +31,11 @@ function previousSlide() {
   if (leftSlideIndex > 0) {
     goToSlide(leftSlideIndex - 1);
   } else {
-    goToSlide(cards.lenght - 1);
+    goToSlide(cards.length - 1);
   }
 }
 function nextSlide() {
-  if (leftSlideIndex < cards.lenght - 1) {
+  if (leftSlideIndex < cards.length - 1) {
     goToSlide(leftSlideIndex + 1);
   } else {
     goToSlide(0);
