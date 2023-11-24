@@ -18,6 +18,10 @@ body, button {
 
 .balance, .margins, .pho, .household, .crown{
   margin: 0 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
  ul {
@@ -66,7 +70,7 @@ p {
   margin-left:3rem;
 }
 
- .nav a {
+ .nav a, .nav2 a {
   text-decoration: none;
   font-family: 'montserrat';
   font-size: 1.25rem;
@@ -76,9 +80,12 @@ p {
   line-height: 3.75rem;
  }
 
-.navlogo {
-  height: 1.6875rem;
-  width: 12rem;
+.nav2 ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 2rem;
+  list-style: none;
 }
 
 .bar {
@@ -90,7 +97,7 @@ p {
   transition: all 0.3s ease-in-out;
 }
 
-/* JavaScript */
+/* JavaScript Hamburger */
 .nav--toggle {
   left: 50% !important;
 }
@@ -104,6 +111,21 @@ p {
   transform: translateY(-8px) rotate(-45deg);
 }
 
+.nav2 {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  .nav2 {
+    display:block;
+  }
+  .hamburgerMenu {
+    display: none;
+  }
+  .search {
+    padding: 0 6rem
+  }
+}
 
 /* BUTTON */ 
 .orangeButton {
@@ -115,16 +137,15 @@ p {
   font-weight: 800;
   border-style: none;
   align-self: center;
+  line-height: 1rem
 }
 
 /* HOME PAGE */
-/* OPENER */
 /* VIDEO *   */
 
 .flame {
-  position: absolute;
-  bottom: -1rem;
-  left: 3.5rem;
+  position: relative;
+  width: 5rem;
   z-index: 1;
 }
 
@@ -165,6 +186,7 @@ h2 {
 .opener {
   display: flex;
   flex-direction: column;
+  align-items: center;
 
 }
 .opener p {
@@ -172,6 +194,36 @@ h2 {
   margin-bottom: 1.4rem;
 }
 
+.allStarTitle {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  .openerRow {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 2rem 2rem 2rem;
+  }
+  .openerRow p {
+    padding: 5rem 9rem 5rem 2rem;
+    width: 100%;
+  }
+  h2 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .flame {
+    position: absolute;
+    left: 23%;
+    top: 22.5rem;
+    width: 7rem
+  }
+  .allStarTitle {
+    display: block;
+    margin-top: 3rem;
+  }
+}
 /* recipe cards */
 .recipeCard {
   display: flex;
@@ -185,7 +237,7 @@ h2 {
   margin: 2rem
 }
 
-.overlapSticker {
+.starSticker {
   position: relative;
   margin-top: 4.31rem;
 }
@@ -238,6 +290,32 @@ h2 {
   margin: 4rem 0;
 }
 
+@media (min-width: 1025px) {
+  .recipeCard {
+    align-items: center;
+    flex-direction: row;
+    width:50%;
+  }
+  .starSticker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .recipeCard img {
+    height: auto;
+    width: 30%;
+    object-fit: cover;
+    border-radius: .63rem 0 0 .63rem;
+
+  }
+  
+  .allstarSticker {
+    top: -3rem;
+    right: 22%;
+  }
+
+}
+
 .greenWave {
   max-height: 3.74944rem;
   width: 100%;
@@ -260,7 +338,6 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .buzzOne {
