@@ -260,14 +260,14 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden  ;
+
 }
 
 .buzzOne {
   position: relative;
   left: 2.5rem;
   top: -1.5rem;
-  rotate: -65deg;
+  transform: rotate(-65deg);
   margin-right: 4rem;
 }
 
@@ -275,7 +275,7 @@ h2 {
   position: relative;
   right: 2.5rem;
   top: -1rem;
-  rotate: 35deg;
+  transform: rotate(35deg);
   margin-left: 4rem;
 }
 
@@ -377,9 +377,6 @@ h2 {
   height: 29.3125rem; 
   z-index: -1;
   border-radius: .63rem;
-}
-.bleeds {
-  z-index: -100rem;
 }
 
 /* Category */
