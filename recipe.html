@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Taste of Vietnam | BANH UOT</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
     <header class="header">
@@ -89,7 +89,7 @@
     <button>Card View</button>
   </div>
 
-      <section class="listView">
+      <div class="listView">
       <ol>
         <li>Make the batter. Combine rice flour, tapioca starch, potato starch, salt and water. Mix together until flour and starches have completely dissolved. Let it sit for 30 minutes to bloom.</li>
         <li>Prepare a tray by greasing with shallot oil. Set aside. This will be used to place the finished rice rolls.</li>
@@ -100,9 +100,9 @@
         <li>Repeat the above steps until batter runs out. Once you get the hang of it, you can get multiple trays going at once.</li>
         <li>Repeat the above steps until batter runs out. Once you get the hang of it, you can get multiple trays going at once. Assemble 4-5 rolls or sheets per person. Top with desired vegetables and serve with a small bowl of sauce on the side for pouring or dipping and enjoy.</li>
       </ol>
-    </section>
+    </div>
 
-    <section class="cardView">
+    <div class="cardView">
       <ol>
     <li class="step">
         <div class="stepCards">
@@ -152,14 +152,14 @@
         <p>Repeat the above steps until batter runs out. Once you get the hang of it, you can get multiple trays going at once. Assemble 4-5 rolls or sheets per person. Top with desired vegetables and serve with a small bowl of sauce on the side for pouring or dipping and enjoy.</p>
       </div>
     </ol>
-<div class="numberSystem">
-<button type="button" class="previous"><i class="fa-solid fa-angle-left"></i></button>
-<ol class="stepNumbers">
-  <li>Step 1 of 8</li>
-</ol>
-<button type="button" class="next"><i class="fa-solid fa-angle-right"></i></button>
+    <div class="numberSystem">
+    <button type="button" class="previous"><i class="fa-solid fa-angle-left"></i></button>
+    <ol class="stepNumbers">
+      <li>Step 1 of 8</li>
+    </ol>
+    <button type="button" class="next"><i class="fa-solid fa-angle-right"></i></button>
+    </div>
 </div>
-    </section>
 
 
     <svg xmlns="http://www.w3.org/2000/svg" width="329" height="52" viewBox="0 0 329 52" fill="none">
@@ -170,7 +170,7 @@
       <section>
         <header class="categoryTitle">
           <h2>craving something else?</h2>
-          <img class="underline" src="images/doodles/underline-doodle.svg">
+          <img class="underline" src="images/doodles/underline-doodle.svg" alt="gren underline">
         </header>
        <div class="carousel">
 <button type="button" class="arrows previous"><i class="fa-solid fa-angle-left"></i></button>
@@ -229,7 +229,7 @@
         <label for="comment">COMMENTS</label>
         <input id="firstname" name="firstname" placeholder="First Name">
         <input id="email" name="email address" placeholder="Email Address" type="email">
-        <input class="commentBox" id="comment" name="comment" type="textarea" placeholder="Type your comment here...">
+        <textarea id="comment" class="commentBox" placeholder="Type your comment here..."></textarea>
         <button class="orangeButton">Leave a comment</button>
       </form>
 
