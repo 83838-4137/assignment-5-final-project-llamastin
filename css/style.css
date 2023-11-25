@@ -521,6 +521,35 @@ h2 {
   align-self: center;
 }
 
+/* Maybe this can help you */
+.end div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.end img {
+  position: absolute;
+  bottom: 40%;
+  right: -8%;
+}
+
+.end {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-bottom: 4rem;
+  align-items: center;
+}
+
+.end button {
+  position: relative;
+  margin-top: 1.3rem;
+}
+
 @media (min-width: 1025px) {
   .carousel {
     max-width: 100%;
@@ -562,37 +591,13 @@ h2 {
     bottom:14rem;
     scale: 120%
   }
+  .end div {
+    width: 30rem;
+  }
+  .end img {
+    right: 16%;
+  }
 }
-/* Maybe this can help you */
-.end div {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 2rem;
-  width: 30rem;
-  text-align: center;
-}
-
-.end img {
-  position: absolute;
-  bottom: 40%;
-  right: 16%;
-}
-
-.end {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  margin-bottom: 4rem;
-  align-items: center;
-}
-
-.end button {
-  position: relative;
-  margin-top: 1.3rem;
-}
-
 /* COURSES PAGE */
 .pageName, .recipePage {
   display: flex;
