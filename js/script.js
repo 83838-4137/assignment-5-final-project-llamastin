@@ -44,7 +44,7 @@ function nextSlide() {
 
 function goToSlide(nextLeftSlideIndex) {
   $(carouselContainer).animate({
-    scrollLeft: carouselContainer.offsetWidth / 3 * nextLeftSlideIndex },
+    scrollLeft: carouselContainer.offsetWidth / 1 * nextLeftSlideIndex },
   {
     duration: 200 });
 

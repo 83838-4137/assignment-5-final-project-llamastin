@@ -110,7 +110,6 @@ p {
 .hamburgerMenu--toggle .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
-
 .nav2 {
   display: none;
 }
@@ -393,7 +392,6 @@ h2 {
   max-width: 24.375rem;
   position: relative;
   margin: 0 auto;
-  padding-left: 3rem;
 }
 
 .dots {
@@ -424,17 +422,17 @@ h2 {
   border: none;
   box-shadow: 0 0 5px;
   font-size: 1.5rem;
-  top: 50%;
+  top: 45%;
   z-index: 2;
 
 }
 
 .previous {
-  left: 2rem;
+  left: 3rem;
 }
 
 .next {
-  right: 2rem;
+  right: 3rem;
 }
 
 
@@ -445,13 +443,17 @@ h2 {
   flex-direction: row;
   align-items: center;
   gap: 2rem;
+  margin: 0 auto;
   overflow: scroll;
+  padding: 0 4.3rem;
 }
 .cards li {
   position: relative;
   list-style: none;
   text-align: center;
   border-radius: .63rem;
+  display: flex;
+  flex: 0 0 15.5625rem;
 }
 
 .darkOverlay {
@@ -463,6 +465,7 @@ h2 {
   );
   border-radius: .63rem;
 } 
+
 .overlapText {
   position: absolute;
   bottom: 2rem; 
@@ -494,6 +497,7 @@ h2 {
 .chopstick {
   position: relative;
   display: flex;
+  margin-bottom: 2rem;
 }
 
 .categoryTitle {
@@ -501,6 +505,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 3rem;
 }
 
 .underline {
@@ -617,6 +622,9 @@ h2 {
   height: auto;
 }
 
+.titles { 
+  margin: 0 1.25rem 2rem 1.25rem;
+}
 .titles h2 {
   text-align: left;
   font-size: 2.5rem;
@@ -873,9 +881,10 @@ form button {
 .emphasis {
   font-weight: 700;
   font-size: 1.25rem;
+  margin-bottom: 2rem;
 }
 
-.vietnamMap {
+.vietnamMap  {
   position:relative;
   margin: 2rem 0;
   display: flex;
@@ -956,20 +965,22 @@ form button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem
 }
 
 .pho img {
   max-width: 10rem;
 }
 
-.pho em {
-  font-weight: bold;
-  line-height: 1.5rem;
+.pho button {
+  margin-bottom: 1rem;
 }
 
-.pho br {
-  margin: 2rem 0;
+.pho em {
+  line-height: 1.5rem;
+  font-weight: 700;
 }
+
 
 /* ICONIC INGREDIENTS */
 .crown {
@@ -992,7 +1003,7 @@ form button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 3rem;
+  margin-top: 3rem;
 }
 
 
@@ -1000,7 +1011,7 @@ form button {
   min-width: 21.875rem;
 }
 .household h2 {
-  margin: 3rem;
+  margin-top: 3rem;
 }
 .ingredientsContainer {
   display: grid;
@@ -1030,6 +1041,7 @@ footer {
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
+  margin-top: 3rem;
 }
 .wave {
   height: auto;
