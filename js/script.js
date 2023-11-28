@@ -57,3 +57,19 @@ function goToSlide(nextLeftSlideIndex) {
 
   leftSlideIndex = nextLeftSlideIndex;
 }
+
+let tabs = document.querySelectorAll(".horizontal li");
+let tabContents = document.querySelectorAll("tabContents");
+
+tabs.forEach((tab, recipe) => {
+  tab.addEventListener("click", () => {
+    tabContents.forEach((content) => {
+      content.classList.remove("active2");
+    });
+    tabs.forEach((tab) => {
+      tab.classList.remove("active2");
+    });
+    tabContents[recipe].classList.add("active2");
+    tabs[recipe].classList.add("active2");
+  })
+})
