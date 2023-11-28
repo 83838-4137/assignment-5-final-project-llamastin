@@ -142,6 +142,10 @@ p {
   vertical-align: middle;
 }
 
+.orangeButton:focus-visible {
+  outline: 3px solid #96DB0A
+}
+
 /* HOME PAGE */
 /* VIDEO *   */
 
