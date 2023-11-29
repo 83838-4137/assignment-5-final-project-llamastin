@@ -59,17 +59,16 @@ function goToSlide(nextLeftSlideIndex) {
 }
 
 let tabs = document.querySelectorAll(".horizontal li");
-let tabContents = document.querySelectorAll("tabContents");
-
+let tabContents = document.querySelectorAll(".tabContents div");
 tabs.forEach((tab, recipe) => {
   tab.addEventListener("click", () => {
     tabContents.forEach((content) => {
-      content.classList.remove("active2");
+      content.classList.remove("activeState");
     });
     tabs.forEach((tab) => {
       tab.classList.remove("active2");
     });
-    tabContents[recipe].classList.add("active2");
+    tabContents[recipe].classList.add("activeState");
     tabs[recipe].classList.add("active2");
-  })
-})
+  });
+});

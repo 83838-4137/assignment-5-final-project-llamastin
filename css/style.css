@@ -142,8 +142,15 @@ p {
   vertical-align: middle;
 }
 
-.orangeButton:focus-visible {
-  outline: 3px solid #96DB0A
+/* FOCUS STATES */
+a:focus-visible, .hamburgerMenu:focus-visible, .search:focus-visible{
+  outline-style: solid;
+  outline-color: #FF9900;
+  outline-width: 2px;
+}
+
+button:focus-visible {
+  outline: 3px solid #96DB0A;
 }
 
 /* HOME PAGE */
@@ -270,7 +277,6 @@ h2 {
 .description {
   display: flex;
   flex-direction: column;
-  align-content: center;
   margin: 1.44rem 1.44rem 0 1.44rem;
   gap: .75rem;
 }
@@ -280,8 +286,9 @@ h2 {
   font-weight: 400;
 }
 
-.description button {
-  margin: .75rem 0 2rem 0;
+.description a {
+  margin-bottom: 1rem;
+  align-self: center;
 }
 
  h3 {
@@ -373,6 +380,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 1rem
 }
 
 .buzzOne {
@@ -848,8 +856,12 @@ ol {
   text-underline-offset: .25em;
 }
 
-.cardView {
+.tabContents div {
   display: none;
+}
+
+.tabContents .activeState {
+  display: block;
 }
 
 
