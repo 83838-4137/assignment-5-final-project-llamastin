@@ -9,7 +9,8 @@ html {
   box-sizing: inherit;
 }
 
-body, button {
+body {
+  position: relative;
   margin: 0;
   color: #000;
   font-family: 'Montserrat';
@@ -50,19 +51,19 @@ p {
   height:auto;
   width: 100%; 
   z-index: 10;
-
-  
 }
 
 .nav {
-  position: fixed;
+  position: absolute;
   top: 65px;
   background-color: #578100;
-  height: 100vh;
-  transition: all 0.4s ease-in;
+  height: 200vh;
+  transition: all 0.5s ease-in;
   width: 100%;
   left: -50%;
   transform: translateX(-50%);
+  line-height: 1rem;
+  animation: 0.5s ease-out;
 }
 
 .nav ul {
@@ -127,19 +128,22 @@ p {
 }
 
 /* BUTTON */ 
+button {
+  font-family: 'Montserrat';
+  font-size: 1rem;
+  align-self: center;
+  font-weight: 800;
+  line-height: 1rem;
+}
+
 .orangeButton {
   width: 10.6875rem;
   height: 2.75rem; 
   border-radius: 2rem;
   background-color:#FF9900;
   font-size: 0.9375rem;
-  font-weight: 800;
   border-style: none;
-  align-self: center;
-  line-height: 1rem;
-  text-decoration: none;
   text-align: center;
-  vertical-align: middle;
 }
 
 /* FOCUS STATES */
@@ -789,26 +793,23 @@ ol {
 }
 
 .step {
-  list-style: none;
-}
-.stepCards {
   display: flex;
+  list-style: none;
   flex-direction: column;
   width: 21.875rem;
-  height: 30.83813rem;
+  height: auto;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   border-radius: .63rem;
   margin-bottom: 1rem;
-
 }
 
-.stepCards img {
+.step img {
   object-fit: cover;
-  height: 13rem;
+  aspect-ratio: 16/9;
   border-radius: .63rem .63rem 0 0;
 }
 
-.stepCards p {
+.step p {
   padding: 1rem;
 }
 
@@ -829,6 +830,7 @@ ol {
   list-style: none;
 }
 
+
 /* TABS */
 .tabs { 
   margin-bottom: 5rem;
@@ -841,7 +843,6 @@ ol {
   list-style: none;
   margin: 2rem 0;
   text-transform: uppercase;
-
 }
 
 .horizontal a {
