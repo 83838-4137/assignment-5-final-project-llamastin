@@ -547,17 +547,18 @@ h2 {
   align-items: center;
   padding: 0 2rem;
   text-align: center;
+  min-width: 380px;
+  max-width:460px;
 }
 
 .end img {
   position: absolute;
-  bottom: 40%;
-  right: -8%;
+  right: 3rem;
+  bottom: -3rem;
 }
 
 .end {
   display: flex;
-  position: relative;
   flex-direction: column;
   margin-bottom: 4rem;
   align-items: center;
@@ -609,11 +610,9 @@ h2 {
     bottom:14rem;
     scale: 120%
   }
-  .end div {
-    width: 30rem;
-  }
+
   .end img {
-    right: 16%;
+    bottom: -2rem;
   }
 }
 /* COURSES PAGE */
