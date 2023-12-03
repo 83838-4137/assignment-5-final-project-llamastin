@@ -1080,6 +1080,13 @@ form button {
   border-radius: 0.625rem;
   border: 2px solid #D9D9D9;
 }
+.ingredientsItem h3 {
+  font-family: 'Montserrat';
+  text-transform: none;
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+}
 
 /* FOOTER */
 
