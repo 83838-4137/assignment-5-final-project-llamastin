@@ -1141,12 +1141,16 @@ footer a {
   font-weight: 700;
 }
 
+footer a:hover {
+  color:#FF9900;
+}
+
 .request::after, .titles a::after{
   content: "→";
 }
 
 .request {
-  color:#FF9900
+  color:#ffffff
 }
 @media (min-width: 1025px) {
   .footerRow {
