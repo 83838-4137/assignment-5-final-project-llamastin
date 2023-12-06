@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Taste of Vietnam | ABOUT</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc3qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
   <header class="header">
@@ -111,7 +111,14 @@
   <header>
     <img src="images/doodles/fire-doodle.svg" alt="flame">
     <h2 >pho-nomenon</h2>
-    <button type="button" class="orangeButton">How to Say Pho <i class="fa-solid fa-play"></i></button>
+    <button class="orangeButton" id="ASong" onClick="playPause()">
+      <audio
+        src="images/about/pho-pronounciation.mp3"
+        autoplay
+        loop
+      ></audio>
+      How to Say Pho <i class="fa-solid fa-play"></i>
+    </button>
   </header>
 
 
@@ -131,7 +138,6 @@
 
 </section>
 
-
     <img class="imageMask" src="images/about/iconic-ingredients.jpg"
       alt="a plate of com tam, rice with prok cutlet, eggs, and vegetables">
 
@@ -141,9 +147,6 @@
     <h2>Iconic ingredients</h2>
     <p>Travel all over Vietnam and you'll quickly find two universal themes. Rice and fish sauce.</p>
 </header>
-
-
-
 
 <section class="infoCards">
     <div class="rightTab">
@@ -246,6 +249,20 @@
   </main>
   <script src="js/script.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    var aud = document.getElementById("ASong").children[0];
+    var isPlaying = false;
+    aud.pause();
+  
+    function playPause() {
+      if (isPlaying) {
+        aud.pause();
+      } else {
+        aud.play();
+      }
+      isPlaying = !isPlaying;
+    }
+  </script>
 </body>
 
 </html>
