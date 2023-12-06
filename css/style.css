@@ -58,12 +58,11 @@ p {
   top: 65px;
   background-color: #578100;
   height: 200vh;
-  transition: all 0.5s ease-in;
+  transition: all 0.3s ease-in;
   width: 100%;
   left: -50%;
   transform: translateX(-50%);
   line-height: 1rem;
-  animation: 0.5s ease-out;
 }
 
 .nav ul {
@@ -147,14 +146,9 @@ button {
 }
 
 /* FOCUS STATES */
-a:focus-visible, .hamburgerMenu:focus-visible, .search:focus-visible{
-  outline-style: solid;
-  outline-color: #FF9900;
-  outline-width: 2px;
-}
-
-button:focus-visible {
-  outline: 3px solid #96DB0A;
+a:focus-visible, .hamburgerMenu:focus-visible, .search:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 3px solid #00D3D3;
+  outline-offset: 2px;
 }
 
 /* HOME PAGE */
@@ -846,9 +840,8 @@ ol {
   text-transform: uppercase;
 }
 
-.horizontal a {
-  text-decoration: none;
-   color:#000
+.horizontal li:hover {
+  color:#FF9900
 }
 
 .active2 {
